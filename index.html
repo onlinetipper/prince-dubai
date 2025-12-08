@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head><!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -11,204 +10,169 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1380216640473550');
+fbq('init', '1354886659698975');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1380216640473550&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1354886659698975&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>PRINCE DUBAI</title>
-<style>
-  :root {
-    --white: #ffffff;
-    --accent: #ffd700;
-    --btn-bg: #0b1b4a;
-    --btn-border: #ffffff;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRINCE DUBAI</title>
 
-  html,body{
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-  }
-  body{
-    background: url('https://raw.githubusercontent.com/onlinetipper/cricket-pathan/22ff3d3c93194c2b2d2172ef6c4803b179e9e5bd/prince.jpg') center/cover no-repeat fixed;
-    position:relative;
-    color:var(--white);
-    -webkit-font-smoothing:antialiased;
-  }
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
 
-  .bg-overlay{
-    position:fixed; inset:0;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(4px);
-    z-index:0;
-  }
+    body {
+      background: linear-gradient(135deg, #1b0022, #2d0040, #000);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
 
-  .wrap{
-    position:relative;
-    z-index:2;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:28px;
-    box-sizing:border-box;
-  }
+    /* ===== CARD ===== */
+    .card {
+      background: rgba(30, 0, 50, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 18px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 35px rgba(255, 215, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
 
-  .card {
-    width: 100%;
-    max-width: 520px;
-    text-align:center;
-    padding: 18px 20px;
-    color: #fff;
-  }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 45px rgba(255, 215, 0, 0.25);
+    }
 
-  .title {
-    font-size: 36px;
-    font-weight: 800;
-    margin: 6px 0;
-    text-shadow: 0 6px 18px rgba(0,0,0,0.6);
-  }
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffd700;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+      margin-bottom: 5px;
+    }
 
-  .subtitle {
-    font-size: 16px;
-    color: rgba(255,255,255,0.9);
-    margin-bottom:18px;
-  }
+    .year {
+      font-size: 0.9rem;
+      color: #b39ddb;
+      margin-bottom: 20px;
+    }
 
-  /* circular profile */
-  .profile {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 18px auto 12px;
-    border: 4px solid rgba(255,255,255,0.2);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-    background: center/cover no-repeat;
-  }
+    .subscribers {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffea8a;
+      margin-bottom: 20px;
+    }
 
-  .joining-line {
-    margin-top: 10px;
-    color: rgba(255,255,255,0.85);
-    font-size: 16px;
-  }
-  .count {
-    font-size: 52px;
-    font-weight: 800;
-    color: var(--accent);
-    margin-top: 6px;
-    text-shadow: 0 6px 20px rgba(0,0,0,0.6);
-  }
+    .desc {
+      font-size: 0.95rem;
+      color: #e0d6ff;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
 
-  .userline {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-  }
+    .highlight {
+      color: #ffd700;
+      font-weight: 600;
+    }
 
-  .request {
-    margin-top: 8px;
-    color: rgba(255,255,255,0.85);
-    font-size: 14px;
-  }
+    /* ===== BUTTON ===== */
+    .btn {
+      background: linear-gradient(90deg, #ffb703, #ff9100);
+      color: #000;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255, 183, 3, 0.3);
+      transition: all 0.3s ease;
+    }
 
-  /* animated button */
-  .btn-join {
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    margin: 24px auto 10px;
-    background: var(--btn-bg);
-    color: var(--white);
-    padding: 16px 28px;
-    border-radius: 44px;
-    font-size: 20px;
-    font-weight: 800;
-    text-decoration: none;
-    border: 3px solid var(--btn-border);
-    box-shadow: 0 10px 30px rgba(3,10,40,0.6);
-    animation: popup 2s infinite ease-in-out, pulseColor 3s infinite alternate;
-  }
+    .btn:hover {
+      background: linear-gradient(90deg, #ffd700, #ffa500);
+      box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
+      transform: translateY(-2px);
+    }
 
-  @keyframes popup {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-  }
+    .footer {
+      color: #d1c4e9;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
 
-  @keyframes pulseColor {
-    0% { background-color: #0b1b4a; }
-    50% { background-color: #152b7b; }
-    100% { background-color: #0b1b4a; }
-  }
+    /* ===== BACKGROUND GLOW ===== */
+    .glow {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.4;
+      z-index: -1;
+      animation: float 6s ease-in-out infinite alternate;
+    }
 
-  .btn-join:hover {
-    transform: scale(1.1);
-    box-shadow: 0 14px 40px rgba(3,10,40,0.9);
-  }
+    .glow:nth-child(1) {
+      background: #ffcc00;
+      top: 15%;
+      left: 15%;
+    }
 
-  .footer-credit {
-    margin-top: 18px;
-    color: rgba(255,215,0,0.95);
-    font-weight:700;
-    font-size: 14px;
-  }
-  .footer-credit a { color: rgba(255,215,0,0.95); text-decoration:none; }
+    .glow:nth-child(2) {
+      background: #b5179e;
+      bottom: 10%;
+      right: 20%;
+      animation-delay: 3s;
+    }
 
-  @media (max-width:480px){
-    .title { font-size: 28px; }
-    .profile { width:110px; height:110px; }
-    .count { font-size:42px; }
-    .btn-join { font-size:18px; padding:14px 22px; border-radius:36px; }
-  }
-</style>
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-20px); }
+    }
+  </style>
 </head>
 <body>
+  <div class="glow"></div>
+  <div class="glow"></div>
 
-<div class="bg-overlay"></div>
-
-<div class="wrap">
   <div class="card">
-    <div class="title">PRINCE DUBAI (TENNIS)</div>
-    <div class="subtitle">Tennis Prediction</div>
+    <h1 class="title">Prince Dubai</h1>
+    <p class="year">(2015)</p>
+    <p class="subscribers">65,997 subscribers</p>
 
-    <div id="profile" class="profile" style="background-image: url('https://raw.githubusercontent.com/onlinetipper/cricket-pathan/22ff3d3c93194c2b2d2172ef6c4803b179e9e5bd/prince.jpg');"></div>
+    <p class="desc">
+      Welcome to our Telegram channel.<br />
+      Please check first my work, then believe me.<br />
+      We provide <span class="highlight">Tennis Reports</span> with best entry.
+    </p>
 
-    <div class="joining-line">FREE JOINING ENDS IN...</div>
-    <div class="count" id="countNum">43</div>
+    <p class="footer">Original link ↓</p>
 
-    <div class="userline">PRINCE DUBAI</div>
-    <div class="request">Request access — approvals are quick ⬇</div>
-
-    <a id="joinBtn" class="btn-join" href="https://t.me/+12v9p8JCU9E0Mzk1" target="_blank">
-      JOIN NOW FOR FREE
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M21 4L3 10.5L10 13.5L13 21L15 13.5L21 4Z" fill="#fff"/>
-      </svg>
-    </a>
-
-    <div class="footer-credit">AD SETUP <a href="https://t.me/AdDukan1" target="_blank">AD DUKAN</a></div>
+    <button class="btn" onclick="joinChannel()">Join [Triangle Toss] Channel</button>
   </div>
-</div>
 
-<script>
-  (function(){
-    let n = 43;
-    const el = document.getElementById('countNum');
-    setInterval(()=>{
-      n--;
-      if(n <= 0) n = 43;
-      el.textContent = n;
-    },1000);
-  })();
-</script>
-
+  <script>
+    function joinChannel() {
+      window.open("https://t.me/+12v9p8JCU9E0Mzk1", "_blank");
+    }
+  </script>
 </body>
 </html>
